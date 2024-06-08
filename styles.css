@@ -1,0 +1,183 @@
+body {
+    margin: 0px;
+    background: rgb(15, 14, 14);
+}
+/*header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00e6e6;
+    padding: 1rem;
+}
+
+
+
+ a {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #000000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* LOGIN */
+
+.contenC {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 10px;
+    color: #ffffff;
+
+}
+
+button {
+    
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    font-size: 1em;
+    background: rgb(58, 48, 48);
+    color: white;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00e6e6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #00e6e6;
+    
+    padding-bottom: 5px;
+
+}
+form input[type="text"], form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1em;
+
+}
+form input[type="text"]:hover, form input[type="password"]:hover, .fichaForm .cedulaClass:hover, form input[type="email"]:hover  {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px #00e6e6;
+}
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #00e6e6;
+    color: #1f1c2c;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; /* Le da el toque 😜😜💖😢 */
+}
+form input[type="submit"]:hover{
+    background: #1f1c2c;
+    color: #00e6e6;
+    transform: scale(1.05);
+}
+
+/* FICHA */
+.fichaDIV {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.fichaForm {
+    background-color: grey;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.fichaForm input[type="text"],
+.fichaForm .cedulaClass, form input[type="email"] {
+    width: 50%;
+    border: 1px solid #ccc; /* Añadir borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Relleno interno */
+    margin-bottom: 10px; /* Espacio debajo de cada input */
+    font-size: 1em; /* Tamaño de fuente */
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.calificacionesDIV {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre los inputs */
+}
+
+.fichaForm input[type="number"]:not(.cedulaClass) {
+    width: 20px;
+    flex: 1 1 calc(20% - 10px); /* Ajuste para 5 elementos por fila */
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1em;
+}
+
+/* Quitar las flechitas del input tipo number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+    /* imprimir ficha */
+
+    .printFichaDiv {
+        margin: 20px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+  
+
+    }
+
+    .printFichaDiv h2 {
+        color: white;
+        
+        font-size: 1em;
+        margin-bottom: 20px;
+        
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-bottom: 2px solid #00e6e6;
+        
+        padding-bottom: 5px;
+    }
+ 
+    
