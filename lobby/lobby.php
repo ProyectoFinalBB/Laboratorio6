@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorios</title>
-    <link rel="stylesheet" href="../laboratorio/styles.css"> <!-- Ruta correcta al archivo CSS -->
-</head>
+
+
 <body>
     <div class="contenC">
         <div class="container">
@@ -17,4 +11,4 @@
         </div>
     </div>
 </body>
-</html>
+
