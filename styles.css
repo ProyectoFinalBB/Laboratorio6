@@ -180,4 +180,22 @@ input[type="number"] {
         padding-bottom: 5px;
     }
  
+    .button {
+        background-color: #00e6e6; /* Fondo del botón */
+        color: #1f1c2c; /* Color del texto */
+        border: 2px solid #1f1c2c; /* Borde del botón */
+        border-radius: 5px; /* Bordes redondeados */
+        padding: 10px 20px; /* Espaciado interno del botón */
+        font-size: 1em; /* Tamaño de la fuente */
+        text-transform: uppercase; /* Texto en mayúsculas */
+        letter-spacing: 2px; /* Espaciado entre letras */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        transition: background 0.3s, color 0.3s, transform 0.3s; /* Transiciones para los efectos */
+    }
+    
+    .button:hover {
+        background-color: #1f1c2c; /* Fondo del botón al pasar el cursor */
+        color: #00e6e6; /* Color del texto al pasar el cursor */
+        transform: scale(1.05); /* Aumenta el tamaño del botón al pasar el cursor */
+    }
     
