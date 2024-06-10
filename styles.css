@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background: rgb(15, 14, 14);
+    background: white;
 }
 /*header */
 
@@ -178,6 +178,12 @@ input[type="number"] {
         border-bottom: 2px solid #00e6e6;
         
         padding-bottom: 5px;
+    }
+
+    .headnav{
+        display: grid;
+        grid-template-areas:"button button button button button" ;
+
     }
  
     
