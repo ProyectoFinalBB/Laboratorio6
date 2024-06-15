@@ -17,6 +17,6 @@
 </form>
 
 <?php
-//include("funciones.php");
+
 calcular();
 ?>

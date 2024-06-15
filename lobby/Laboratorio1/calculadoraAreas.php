@@ -16,7 +16,6 @@
 </form>
 
 <?php 
-// Otro archivo (por ejemplo, calcular_area_figuras.php)
-//include("funciones.php");
+
 figuras();
 ?>

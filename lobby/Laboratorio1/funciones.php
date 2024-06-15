@@ -5,7 +5,7 @@ function figuras() {
         $figura = $_POST['figura'];
         $valor1 = $_POST['valor1_area'];
         $valor2 = $_POST['valor2_area'];
-     //   $area = 0;
+
 
         if ($figura == "cuadrado") {
          $area = cuadrado($valor1);

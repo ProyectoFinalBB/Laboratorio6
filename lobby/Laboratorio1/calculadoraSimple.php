@@ -9,6 +9,5 @@
 </form>
 
 <?php
-//include("funciones.php");
 calcularSimple();
 ?>
