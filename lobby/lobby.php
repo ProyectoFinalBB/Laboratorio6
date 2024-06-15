@@ -17,7 +17,7 @@
         $pagina = $_POST['pagina'];
         switch ($pagina) {
             case 'pagina1':
-                include 'pagina1.php';
+                include 'Laboratorio1/inicio_lab1.php';
                 break;
             case 'pagina2':
                 include 'Laboratorio2/inicio_lab2.php';
