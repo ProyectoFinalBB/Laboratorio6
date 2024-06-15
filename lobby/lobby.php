@@ -1,7 +1,5 @@
 
 <body>
-
-
         <form method="POST" action="" class="headnav">
             <button type="submit" name="pagina" value="pagina1">Página 1</button>
             <button type="submit" name="pagina" value="pagina2">Página 2</button>
@@ -23,13 +21,13 @@
                 include 'Laboratorio2/inicio_lab2.php';
                 break;
             case 'pagina3':
-                include 'pagina3.php';
+                include 'Laboratorio3/inicio_lab3.php';
                 break;
             case 'pagina4':
-                include 'pagina4.php';
+                include 'Laboratorio4/inicio_lab4.php';
                 break;
             case 'pagina5':
-                include 'pagina5.php';
+                include 'Laboratorio5/inicio_lab5.php';
                 break;
             default:
                 echo '<p>Selecciona una página.</p>';
