@@ -1,5 +1,5 @@
 
-<?php include("funciones.php")?>
+
 <h2>Comprobador de Cédulas de Identidad Uruguaya</h2>
 <form action="" method="post">
     <label for="ci">Ingrese el número de cédula:</label>

@@ -1,14 +1,13 @@
 <?php 
 
-session_start();
 
-
-if (isset($_SESSION['username'])) {
-
-    include("ficha.php");
+if (isset($_SESSION['ficha']) == 0) {
+    include("imprimirFicha.php");
 } else {
-    include("login.php");
+    include("ficha.php");
 }
+
+    
 
 
 

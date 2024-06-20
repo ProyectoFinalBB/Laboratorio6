@@ -21,6 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $c9 = $_POST['c9'];
     $c10  = $_POST['c10'];
 
+    $_SESSION['ficha'] = 0;
+
     $promedio = ($c1+$c2+$c3+$c4+$c5+$c6+$c7+$c8+$c9+$c10)/10;
     $_SESSION['promedio'] = $promedio;
    
@@ -39,12 +41,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['cedula'] = $_POST['cedula'];
     } else {
         echo "<p>La cédula $ci no es válida.</p>";
-        header("location: ficha.php");
+        header("location: inicio_lab5.php");
     }
 
 
 
- header("location: imprimirFicha.php");
+ header("location: inicio_lab5.php");
 }
 
 function validarCI($ci) {

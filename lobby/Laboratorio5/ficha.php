@@ -3,8 +3,8 @@
 
 
 <div class="contenC fichaDIV">
-    <form class="fichaForm" action="fichaFunctions.php" method="post">
-        <a href="imprimirFicha.php">Ver Ficha</a>
+    <form class="fichaForm" action="\laboratorio6\lobby\Laboratorio5\fichaFunctions.php" method="post">
+        <a href="">Ver Ficha</a>
         <label >Nombre Completo:</label>
         <input type="text" name="nombreEstudiante" required>
         
