@@ -1,11 +1,11 @@
 
 <body>
         <form method="POST" action="" class="headnav">
-            <button type="submit" name="pagina" value="pagina1">Página 1</button>
-            <button type="submit" name="pagina" value="pagina2">Página 2</button>
-            <button type="submit" name="pagina" value="pagina3">Página 3</button>
-            <button type="submit" name="pagina" value="pagina4">Página 4</button>
-            <button type="submit" name="pagina" value="pagina5">Página 5</button>
+            <button type="submit" name="pagina" value="pagina1">Laboratorio 1</button>
+            <button type="submit" name="pagina" value="pagina2">Laboratorio 2</button>
+            <button type="submit" name="pagina" value="pagina3">Laboratorio 3</button>
+            <button type="submit" name="pagina" value="pagina4">Laboratorio 4</button>
+            <button type="submit" name="pagina" value="pagina5">Laboratorio 5</button>
         </form>
 
 
@@ -13,6 +13,7 @@
 <?php
 if (isset($_POST['pagina'])) {
     $_SESSION['pagina'] = $_POST['pagina'];
+    header("Location: " . $_SERVER['PHP_SELF']);
    }
 
 
