@@ -1,6 +1,4 @@
 <?php 
-session_start();
-
 
 
     
@@ -14,6 +12,7 @@ session_start();
       $promedio =  $_SESSION['promedio'];
       $sitCalificaciones = $_SESSION['SitAcademicca'];
         echo "<div class='printFichaDiv'>";
+
         echo "<h1 class='printFichah1'> Ficha </h1>";
 
         echo "<h2>Nombre: $nombreEstudiante  </h2>";
@@ -36,4 +35,4 @@ session_start();
         echo "<h2>Si tu ficha no se imprime, comprueba que los datos ingresados son correctos</h2>";
         echo "</div>";
     }
-    
+    ?>

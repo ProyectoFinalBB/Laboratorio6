@@ -6,7 +6,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #00e6e6;
     padding: 1rem;

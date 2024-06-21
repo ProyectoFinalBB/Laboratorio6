@@ -13,11 +13,11 @@
 <?php
 if (isset($_POST['pagina'])) {
     $_SESSION['pagina'] = $_POST['pagina'];
-}
+   }
 
-$pagina = $_SESSION['pagina'];
-    if (isset($pagina)) {
-        switch ($pagina) {
+
+    if (isset($_SESSION['pagina'])) {
+        switch ($_SESSION['pagina']) {
             case 'pagina1':
                 include 'Laboratorio1/inicio_lab1.php';
                 break;
@@ -34,11 +34,11 @@ $pagina = $_SESSION['pagina'];
                 include 'Laboratorio5/inicio_lab5.php';
                 break;
             default:
-                echo '<p>Selecciona una página 1.</p>';
+            include 'Laboratorio1/inicio_lab1.php';
                 break;
         }
     } else {
-        echo '<p>Selecciona una página 2.</p>';
+        include 'Laboratorio1/inicio_lab1.php';
     }
     ?>
 </main>

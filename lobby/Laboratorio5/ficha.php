@@ -3,8 +3,7 @@
 
 
 <div class="contenC fichaDIV">
-    <form class="fichaForm" action="\laboratorio6\lobby\Laboratorio5\fichaFunctions.php" method="post">
-        <a href="">Ver Ficha</a>
+    <form class="fichaForm" action="\Laboratorio6\lobby\Laboratorio5\fichaFunctions.php" method="post">
         <label >Nombre Completo:</label>
         <input type="text" name="nombreEstudiante" required>
         
@@ -36,7 +35,7 @@
             <input type="number" name="c9" min="1" max="12" step="1" required>
             <input type="number" name="c10" min="1" max="12" step="1" required>
         </div>
-        <input type="submit" value="Enviar"> 
+        <input type="submit" value="Enviar" name="enviar"> 
     </form>
 
 </div>
