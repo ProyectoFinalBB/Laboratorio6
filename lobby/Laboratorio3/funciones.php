@@ -1,3 +1,8 @@
+<?php 
+if (!defined('MY_APP')) {
+    die('No direct access allowed.');
+}
+?>
 <?php
 function convertirBase($numero, $base_origen, $base_destino) {
     $bases = array();

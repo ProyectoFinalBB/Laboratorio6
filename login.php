@@ -14,9 +14,19 @@
     <input type="text" name="user" placeholder="Usuario">
     <input type="password" name="password" placeholder="Contraseña">
     <input type="submit" value="Enviar"> 
+    
+<?php 
+
+if (!isset($_SESSION['username']) && isset($_SESSION['errorLogin'])){
+    $err = $_SESSION['errorLogin'];
+    echo "<p> $err </p>";
+}
+
+?>
 </form>
 
 </div>
+
 
 </body>
 </html>

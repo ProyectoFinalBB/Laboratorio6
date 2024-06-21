@@ -1,3 +1,8 @@
+<?php 
+if (!defined('MY_APP')) {
+    die('No direct access allowed.');
+}
+?>
 <?php require_once "funciones.php"; ?>
 
 <h2>Pozo de Oro</h2>

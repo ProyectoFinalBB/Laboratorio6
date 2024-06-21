@@ -1,3 +1,8 @@
+<?php 
+if (!defined('MY_APP')) {
+    die('No direct access allowed.');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +18,9 @@
         
         <?php 
         $name = $_SESSION['username'];
-        echo "<h2> Hola $name </h2>" ; ?>
+        echo "<h2> Hola $name </h2>" ; 
+
+        ?>
          <a href="logout.php">Cerrar Sesion</a>
          </header>
     

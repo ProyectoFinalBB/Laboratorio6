@@ -1,4 +1,8 @@
-
+<?php 
+if (!defined('MY_APP')) {
+    die('No direct access allowed.');
+}
+?>
 
 <h2>Comprobador de Cédulas de Identidad Uruguaya</h2>
 <form action="" method="post">

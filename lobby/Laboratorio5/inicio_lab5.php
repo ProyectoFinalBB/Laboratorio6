@@ -1,3 +1,8 @@
+<?php 
+if (!defined('MY_APP')) {
+    die('No direct access allowed.');
+}
+?>
 <form method="post" action="\Laboratorio6\lobby\Laboratorio5\fichaFunctions.php">
         <button type="submit" name="miBoton">Ficha</button>
     </form>

@@ -1,3 +1,8 @@
+<?php 
+if (!defined('MY_APP')) {
+    die('No direct access allowed.');
+}
+?>
 <!-- calculadoraProf.php -->
 <h2>Calculadora de Potencia, Raíz Cuadrada y Bhaskara</h2>
 <form action="" method="post">

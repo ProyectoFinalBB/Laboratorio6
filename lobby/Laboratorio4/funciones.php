@@ -1,3 +1,8 @@
+<?php 
+if (!defined('MY_APP')) {
+    die('No direct access allowed.');
+}
+?>
 <?php
 
 // Función para calcular el dígito verificador de una CI uruguaya

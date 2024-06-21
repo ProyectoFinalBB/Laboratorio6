@@ -1,4 +1,8 @@
-
+<?php 
+if (!defined('MY_APP')) {
+    die('No direct access allowed.');
+}
+?>
 <h2>Generador de Dígitos Verificadores</h2>
 <form action="" method="post">
     <label for="primeros_siete">Ingrese los primeros 7 números de la cédula:</label>

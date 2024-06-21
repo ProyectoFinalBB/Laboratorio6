@@ -1,4 +1,8 @@
-
+<?php 
+if (!defined('MY_APP')) {
+    die('No direct access allowed.');
+}
+?>
 <h2>Bienvenido al Sistema de Cédulas de Identidad Uruguaya</h2>
 
 

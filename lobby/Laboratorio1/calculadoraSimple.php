@@ -1,3 +1,8 @@
+<?php 
+if (!defined('MY_APP')) {
+    die('No direct access allowed.');
+}
+?>
 <!-- calculadoraSimple.php -->
 <h2>Calculadora Simple</h2>
 <form action="" method="post">

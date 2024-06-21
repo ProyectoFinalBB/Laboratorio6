@@ -1,3 +1,8 @@
+<?php 
+if (!defined('MY_APP')) {
+    die('No direct access allowed.');
+}
+?>
 <!-- calculadoraAreas.php -->
 <h2>Calculadora de Áreas</h2>
 <form action="" method="post">

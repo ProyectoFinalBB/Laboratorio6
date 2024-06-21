@@ -1,4 +1,9 @@
 <?php 
+if (!defined('MY_APP')) {
+    die('No direct access allowed.');
+}
+?>
+<?php 
 
 
     

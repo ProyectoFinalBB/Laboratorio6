@@ -1,3 +1,4 @@
+
 <?php 
 
 
@@ -25,15 +26,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
          
         } 
-        echo "Lo que ingresaste es invalido<br>";
-        echo "Usuario: " . $user . "<br>";
-        echo "Contraseña: " . $password;
+        $_SESSION['errorLogin'] = "Lo que ingresaste es invalido<br>";
+        header("Location: index.php");
     } else {
 
-        echo "Por favor, proporciona tanto el nombre de usuario como la contraseña.";
+        $_SESSION['errorLogin'] = "Por favor, proporciona tanto el nombre de usuario como la contraseña.";
+        header("Location: index.php");
     }
 } else {
-    echo "No se ha enviado ningún dato.";
+    $_SESSION['errorLogin'] = "No se ha enviado ningún dato.";
+    header("Location: index.php");
 }
 
 

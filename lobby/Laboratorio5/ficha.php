@@ -1,5 +1,9 @@
 
-
+<?php 
+if (!defined('MY_APP')) {
+    die('No direct access allowed.');
+}
+?>
 
 
 <div class="contenC fichaDIV">
