@@ -1,8 +1,3 @@
-<?php 
-if (!defined('MY_APP')) {
-    die('No direct access allowed.');
-}
-?>
 <?php require_once "funciones.php"; ?>
 
 <h2>Conversor de Bases Numéricas</h2>
@@ -36,9 +31,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["convertir"])) {
     $numero = $_POST["numero"];
     $base_origen = $_POST["base_origen"];
 
-    $base_resultado = $_POST["base_resultado"]; // Agregado
+    $base_resultado = $_POST["base_resultado"]; 
     
-    $resultado = convertirBase($numero, $base_origen, $base_resultado); // Modificado
+    $resultado = convertirBase($numero, $base_origen, $base_resultado); 
     echo "<p>El resultado de la conversión es: $resultado</p>";
 }
 ?>
