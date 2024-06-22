@@ -1,10 +1,4 @@
-<?php 
-if (!defined('MY_APP')) {
-    die('No direct access allowed.');
-}
-?>
 <?php
-
 function generarTablaMultiplicar($numero) {
     $tabla = "";
     for ($i = 1; $i <= 10; $i++) {
@@ -25,27 +19,49 @@ function verificarGanador($numerosUsuario, $numerosAleatorios) {
     }
 }
 
-function calcularProbabilidad() {
-    $totalNumeros = 48;
-    $numerosCorrectos = 5;
 
-    $combinacionesPosibles = combinatoria($totalNumeros, $numerosCorrectos);
+function calcularProbabilidad($cantidad_juegos) {
+    // Número total de posibles jugadas en el 5 de Oro
+    $posibles_jugadas = 1712304;
 
-    $probabilidad = 1 / $combinacionesPosibles;
+    // Verificar si la cantidad de juegos es mayor que las posibles jugadas
+    if ($cantidad_juegos > $posibles_jugadas) {
+        return "No está permitido jugar más que las jugadas totales posibles.";
+    }
 
-    return $probabilidad;
+    // Si se juegan todas las posibles jugadas, la probabilidad de ganar al menos una vez es 1
+    if ($cantidad_juegos == $posibles_jugadas) {
+        return 1;
+    }
+
+    // Probabilidad de ganar en una sola jugada
+    $probabilidad_unica = 1 / $posibles_jugadas;
+
+    // Probabilidad de no ganar en todas las jugadas
+    $no_ganar_todas = pow(1 - $probabilidad_unica, $cantidad_juegos);
+
+    // Probabilidad de ganar al menos una vez en $cantidad_juegos jugadas
+    $probabilidad = 1 - $no_ganar_todas;
+
+    $probabilidadFormateada = number_format($probabilidad, 10);
+
+    return $probabilidadFormateada;
+   
+
 }
+ 
+   
+
 
 function factorial($n) {
-    if ($n === 0) {
-        return 1;
-    } else {
-        return $n * factorial($n - 1);
+    $resultado = 1;
+    for ($i = 1; $i <= $n; $i++) {
+        $resultado *= $i;
     }
+    return $resultado;
 }
 
 function combinatoria($n, $k) {
     return factorial($n) / (factorial($k) * factorial($n - $k));
 }
-
 ?>
