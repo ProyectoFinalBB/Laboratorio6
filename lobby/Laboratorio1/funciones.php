@@ -88,8 +88,15 @@ function calcular () {
             echo "<div class='resultado'> El resultado es: $resultado </div>";
         } elseif ($operacion == "bhaskara"){
             $TEXTO = "";
-           $TEXTO = bhaskara($a, $b, $c);
-           echo "<div class='resultado'>$TEXTO</div>";
+            if($a == "" || $b == "" || $c == "" ) {
+                
+                echo "<div class='resultado'>Debes Ingresar todos los digitos</div>";
+            } else {
+                $TEXTO = bhaskara($a, $b, $c);
+                echo "<div class='resultado'>$TEXTO</div>";
+            }
+           
+           
            
         }elseif ($operacion == "raiz"){
             $resultado = raizCuadrada($a);
