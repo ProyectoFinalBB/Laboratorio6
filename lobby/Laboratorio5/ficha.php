@@ -1,7 +1,7 @@
 
 <?php 
 if (!defined('MY_APP')) {
-    die('No direct access allowed.');
+    die('No podes estar acá :(');
 }
 ?>
 

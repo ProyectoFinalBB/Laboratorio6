@@ -4,8 +4,8 @@
 
   
 session_start();
-$usuarios = ["Alex", "Joaco", "Candela", "Lucas"];
-$contraseña = ["a123", "j123", "c123" ,"l123"];
+$usuarios = ["Alex", "Joaco", "Candela", "Lucas","Facu"];
+$contraseña = ["a123", "j123", "c123" ,"l123","f123"];
 
 
 
