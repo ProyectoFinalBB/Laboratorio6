@@ -4,7 +4,7 @@ if (!defined('MY_APP')) {
 }
 ?>
 <body>
-        <form method="POST" action="" class="headnav">
+        <form method="POST" action="" class="headnav" id="lobbyForm">
             <button type="submit" name="pagina" value="pagina1">Laboratorio 1</button>
             <button type="submit" name="pagina" value="pagina2">Laboratorio 2</button>
             <button type="submit" name="pagina" value="pagina3">Laboratorio 3</button>
