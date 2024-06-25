@@ -3,7 +3,7 @@ if (!defined('MY_APP')) {
     die('No direct access allowed.');
 }
 ?>
-<body>
+
         <form method="POST" action="" class="headnav" id="lobbyForm">
             <button type="submit" name="pagina" value="pagina1">Laboratorio 1</button>
             <button type="submit" name="pagina" value="pagina2">Laboratorio 2</button>
@@ -11,6 +11,7 @@ if (!defined('MY_APP')) {
             <button type="submit" name="pagina" value="pagina4">Laboratorio 4</button>
             <button type="submit" name="pagina" value="pagina5">Laboratorio 5</button>
         </form>
+   
 
 
 <main>

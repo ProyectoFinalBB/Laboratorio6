@@ -180,12 +180,6 @@ input[type="number"] {
         padding-bottom: 5px;
     }
 
-    .headnav{
-        display: grid;
-        grid-template-areas:"button button button button button" ;
-
-    }
- 
     main {
         display: flex;
         flex-direction: column;
@@ -205,4 +199,40 @@ input[type="number"] {
         text-shadow: 0 0 5px rgba(0, 255, 255, 0.8);
     }
 
+.headnav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #333;
+}
+
+.headnav button {
+    color: white;
+    background-color: #555;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.headnav button:hover {
+    background-color: #777;
+}
+
+
+@media (max-width: 600px) {
+    .headnav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .headnav button {
+        flex: 1 1 45%; 
+        margin: 5px;   
+        box-sizing: border-box; 
+    }
+}
+
+      
+ 
 
